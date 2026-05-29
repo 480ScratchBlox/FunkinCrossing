@@ -31,7 +31,7 @@ jobs:
           echo "HXCPP_COMPILE_CACHE=~/.hxcpp" >> $GITHUB_ENV
       - name: Installing LibVLC
         run: |
-          sudo apt-get install libvlc-dev libvlccore-dev
+          sudo apt-get install libvlc-dev libvlccore-dev -y
       - name: Installing/Updating libraries
         run: |
           haxe -cp commandline -D analyzer-optimize --run Main setup -s
@@ -105,7 +105,7 @@ jobs:
           echo "HXCPP_COMPILE_CACHE=~/.hxcpp" >> $GITHUB_ENV
       - name: Installing LibVLC
         run: |
-          sudo apt-get install libvlc-dev libvlccore-dev
+          sudo apt-get install libvlc-dev libvlccore-dev -y
       - name: Installing/Updating libraries
         run: |
           haxe -cp commandline -D analyzer-optimize --run Main setup -s

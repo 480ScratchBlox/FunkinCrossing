@@ -2,7 +2,7 @@ name: Mac OS Builds
 
 on:
   push:
-  #workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   build:
